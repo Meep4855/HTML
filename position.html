@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="chapter 7 exercise">
+    <meta name="keywords" content="HTML, Javascript, CSS">
+    <meta name="author" content="Jacob Furtado">
+    <title>CSS Position</title>
+
+    <style type="text/css">
+        #static{
+            position:static;
+            border: 2px solid blue;
+        }
+
+        #relative{
+            position: relative;
+            width:400px;
+            height:200px;
+            top: 20px;
+            left:40px;
+            border: 2px solid red;
+        }
+
+        #fixed{
+            position: fixed;
+            bottom: 0;
+            right:0;
+            width: 300px;
+            border: 2px solid green;
+        }
+
+        #absolute{
+            position: absolute;
+            top: 70px;
+            right:0;
+            width: 250px;
+            height: 90px;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="static">
+        This div element has position: static;
+    </div>
+
+    <div id="relative">
+        This div element has position:relative;
+        <div id="absolute">
+            This div element is set to position: absolute
+        </div>
+    </div>
+
+    <div id="fixed">
+        This div element has position: fixed
+    </div>
+
+    <script src=http://my.gblearn.com/js/loadscript.js></script>
+
+
+    </body>
+</html>

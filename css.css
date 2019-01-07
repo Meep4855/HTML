@@ -1,0 +1,12 @@
+#wrapper {
+    width: 800px;
+    margin:0 auto;
+}
+
+header, nav, article, aside, section, footer, div{
+    display: block;
+    border: solid 1px blue;
+    border-radius: 6px;
+    margin: 5px;
+    padding: 5px;
+}

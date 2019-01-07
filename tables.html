@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="chapter 6">
+    <meta name="keywords" content="HTML, Javascript, css">
+    <meta name="author" content="Jacob Furtado">
+    <title>HTML Tables</title>
+
+    <style type="text/css">
+        table, tr, td, th {
+            border: black solid 1px;
+            border-collapse: collapse;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Simply Table</h1>
+    <table>
+        <tr>
+            <td>First Row/ First Column</td>
+            <td>First Row/Second Column</td>
+        </tr>
+
+        <tr>
+            <td>Second Row / First Column</td>
+            <td>Second Row / Second Column</td>
+        </tr>
+    </table>
+
+    <h1>Drawing a table</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Column 1 Header</th>
+                <th>Column 2 Header</th>
+                <th>Column 3 Header</th>
+                <th>Column 4 Header</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>First Row / First Column</td>
+                <td>First Row / Second Column</td>
+                <td>First Row / Third Column</td>
+                <td>First Row / Fourth Column</td>
+            </tr>
+
+            <tr>
+                <td>Second Row / First Column</td>
+                <td>Second Row / Second Column</td>
+                <td>Second Row / Third Column</td>
+                <td>Second Row / Fourth Column</td>
+            </tr>
+
+            <tr>
+                <td>Third Row / First Column</td>
+                <td>Third Row / Second Column</td>
+                <td>Third Row / Third Column</td>
+                <td>Third Row / Fourth Column</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>Table With Colspan</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4">Third Table</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="4">First Row / First Column</td>
+            </tr>
+            <tr>
+                <td colspan="2">Second Row / First Column</td>
+                <td colspan="2">Second Row / Second Column</td>
+            </tr>
+            <tr>
+                <td>Third Row / First Column</td>
+                <td>Third Row / Second Column</td>
+                <td>Third Row / Third Column</td>
+                <td>Third Row / Fourth Column</td>
+            </tr>
+        </tbody>
+    </table>
+
+ ]
+    <h1>Table with Rowspan</h1>
+    <table>
+        <thead>
+        <tr>
+            <th colspan="4">Fourth Table</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>First Row / First Column</td>
+            <td>First Row / Second Column</td>
+            <td>First Row / Third Column</td>
+            <td>First Row / Fourth</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Second Row / First Column</td>
+            <td rowspan="2">Second Row / Second Column</td>
+            <td>Second Row / Third Column</td>
+            <td>Second Row / Fourth Column</td>
+        </tr>
+
+        <tr>
+            <td>Third Row / First Column</td>
+            <td>Third Row / Second Column</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h1>Nested Table</h1>
+    <table>
+        <tr>
+            <td>This cell Contains a table:
+                <table>
+                    <tr>
+                        <td>Nested 1</td>
+                        <td>Nested 2</td>
+                    </tr>
+                    <tr>
+                        <td>Nested 3</td>
+                        <td>Nested 4</td>
+                    </tr>
+                </table>
+            </td>
+                <td>First Row / Second Column</td>
+        </tr>
+    </table>
+
+    <script src="http://my.gblearn.com/js/loadscript.js"></script>
+</body>
+</html>

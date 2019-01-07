@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="chapter 7">
+    <meta name="author" content="HTML,CSS">
+    <meta name="keywords" content="HTML, CSS">
+    <title>Fixed</title>
+
+    <style type="text/css">
+        #wrapper{
+            width:1000px;
+            background-color:lightblue;
+            border: 1px solid purple;
+        }
+
+        #column1, #column2, #column3{
+            height: 300px;
+            margin: 30px 0 30px 30px; /*top, right, bottom, left*/
+            background-color: lightgoldenrodyellow;
+            float:left;
+            text-align: center;
+        }
+
+        #column1{
+            width:440px;
+        }
+
+        #column2, #column3{
+            width: 220px;
+        }
+        footer{
+            width: 940px;
+            height: 50px;
+            background-color:lavender;
+            margin: 0 0 30px 30px;
+            clear: both;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="column1">
+            <h2>Column1</h2>
+        </div>
+        <div id="column2">
+            <h2>Column2</h2>
+        </div>
+        <div id="column3">
+            <h2>Column3</h2>
+        </div>
+        <footer>
+            This is the footer
+        </footer>
+    </div>
+    <script src=http://my.gblearn.com/js/loadscript.js></script>
+
+    </body>
+</html>

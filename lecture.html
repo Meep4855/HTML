@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wkk 11 css format and Box model</title>
+
+    <style>
+        #wrapper{
+            width: 800px;
+            margin:0 auto;
+        }
+        header{
+            position: fixed;
+            border: 5px solid blue;
+            height:100px;
+            width: 790px;
+            background-color: lightblue;
+        }
+        article{
+            height:100px;
+            width:790px;
+        }
+        section, footer, aside{
+            border: 5px solid blue;
+            height: 200px;
+        }
+
+        section{
+            float:left;
+            width: 385px;
+            margin: 5px 5px 5px 0px;
+        }
+
+        aside{
+            float:right;
+            width: 385px;
+            margin: 5px 0px 5px 5px;
+        }
+        footer{
+            clear:both;
+        }
+        header div{
+            position:absolute;
+            top: 10px;
+            right:10px;
+            width:50px;
+            height:50px;
+            background-color: green;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            This is the header
+            <div>
+                Home
+            </div>
+        </header>
+        <article></article>
+        <section>
+            This is a section
+        </section>
+
+        <aside>
+            This is aside
+        </aside>
+        <footer>
+            This is a footer
+        </footer>
+    </div>
+</body>
+</html>

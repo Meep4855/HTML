@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Chapter 8 Exercises">
+    <meta name="keywords" content="HTML, Javascript, CSS">
+    <meta name="author" content="Jacob Furtado">
+    <title>Favorite Drink</title>
+    <style>
+        input:invalid{
+            border:2px dashed red;
+        }
+        input:valid{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <label for="choose">Do you prefer Coke or Pepsi?</label>
+        <input id="choose" name="i_prefer" required pattern="[Cc]oke|[Pp]epsi">
+        <button>Submit</button>
+    </form>
+
+    <script src=http://my.gblearn.com/js/loadscript.js></script>
+</body>
+</html>

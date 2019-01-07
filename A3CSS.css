@@ -1,0 +1,95 @@
+body {
+    background-color: azure;
+    margin:0 auto;
+}
+
+nav {
+    background-color: azure;
+    display:block;
+    overflow:hidden;
+    position:fixed;
+    top: 0;
+    width:100%;
+    float:left;
+    overflow:hidden;
+    padding:16px;
+    text-align: center;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+}
+
+nav a:hover {
+    color: white;
+    background-color: darkblue;
+}
+
+/*------- Start Page ----------*/
+body nav#startPage{
+    margin: auto;
+}
+
+.containerStart img{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.containerStart {
+    padding:16px;
+}
+
+.containerStart a {
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.containerStart a:hover {
+    color: white;
+    background-color: darkblue;
+}
+
+
+.containerStart {
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 25%;
+    max-width: 100%;
+    text-align: center;
+}
+/*------- Start Page ----------*/
+
+ul {
+
+}
+
+li a {
+    float: left;
+    display: block;
+    text-decoration:none;
+}
+
+
+.container {
+    width: 1000px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 16px;
+}
+
+#headerCSS{
+    background-color:blue;
+}
+
+#matTable {
+    border:solid 2px black;
+}
+
+#matTable td{
+    border:solid 2px black
+}

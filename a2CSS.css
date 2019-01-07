@@ -1,0 +1,65 @@
+header{
+    color:blue;
+    text-align:center;
+    text-shadow:2px 2px 0 #619df3;
+}
+
+body {
+    background-color:rgb(54,58,56);
+    width: 800px;
+    margin: 0 auto;
+}
+
+nav, article, footer {
+    display:block;
+    border: solid 3px blue;
+    border-radius: 6px;
+    margin: 5px;
+    padding: 5px;
+}
+
+article {
+    float: left;
+    width: 30%;
+}
+
+
+ul {
+    width: 50%;
+    text-align: center;
+}
+
+ul#area1 li a:link, ul#area2 li a:link, ul#area3 li a:link {
+    color: red;
+    text-decoration: none;
+}
+
+ul#area1 li a:hover, ul#area2 li a:hover, ul#area3 li a:hover {
+    color:violet;
+    background-color: cyan;
+    text-decoration: none;
+}
+
+#area1 li:nth-child(-n+2), #area2 li:nth-child(-n+2), #area3 li:nth-child(-n+6) {
+    background-color: limegreen;
+}
+
+#iTable {
+    clear: both;
+    padding: 5px;
+}
+
+#vTable table, #iTable table {
+    margin: 0 auto;
+    border: blue solid 3px;
+    border-radius: 6px;
+
+}
+
+#vTable table tr#videoDesc {
+    text-align: center;
+}
+
+iframe {
+    border: 0;
+}

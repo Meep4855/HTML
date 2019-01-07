@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Chapter 8 Exercises">
+    <meta name="keywords" content="HTML, Javascript, CSS">
+    <meta name="author" content="Jacob Furtado">
+    <title>HTML Forms</title>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+    <form>
+        Username:<input type="text" name="username"><br>
+        Password:<input type="password" name="password"><br>
+        First Name:<input type="text" name="fname"><br>
+        Last Name:<input type="text" name="lname"><br>
+        Email:<input type="email" name="email"><br>
+        <img src="submitB.png" alt="Submite button" style="width:75px;height:73px;">
+        <input type="image" src="submitB.png" alt="Submit" width="75" height="73">
+        <input type="rest" value="reset">
+    </form>
+
+    <form>
+        quantity (between 1 and 5):
+        <input type="number" name="quantity" min="1" max="5">
+        <input type="submit">
+    </form>
+
+    <p>This button activates a javascript message</p>
+    <form>
+        <input type="button" value="Click me" onclick="msg()">
+    </form>
+    <script>
+        function msg(){
+            alert("Hello world!");
+        }
+    </script>
+
+    <br>
+    <form>
+      <input type="checkbox" name="colour1" value="red"> Red <br>
+      <input type="checkbox" name="colour2" value="yellow"> yellow<br>
+      <input type="checkbox" name="colour3" value="blue" checked>Blue<br>
+    </form>
+
+    <form>
+        <label for="pizza">Pizza</label>
+        <input type="radio" name="food" id="pizza" value="pizza"><br>
+        <label for="burger"> Burger</label>
+        <input type="radio" name="food" id="burger" value="burger"><br>
+        <label for="fries"> Fries</label>
+        <input type="radio" name="food" id="fries" value="fries"><br>
+    </form>
+
+    <br>
+    <form>
+        select a file: <input type="file" name="img">
+        <input type="submit">
+    </form>
+
+    <br>
+    <form>
+        <select name="computers" size="4" multiple>
+            <option value="apple">Apple</option>
+            <option value="lenovo" selected>Lenovo</option>
+            <option value="Asus">Asus</option>
+            <option value="hp">HP</option>
+        </select>
+        <br><br>
+        <button type="button" onclick="alert('Hello Word!')">Click Me!</button>
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+    <form>
+        <textarea name="message" rows="10" cols="30">
+            This is an example of a text area.
+        </textarea>
+        <br>
+        <input type="submit">
+    </form>
+
+    <br><br>
+    <form>
+        <fieldset>
+            <legend>Registration Form</legend>
+            Name:<input type="text"><br>
+            Email:<input type="text"><br>
+            Date of birth:<input type="text">
+        </fieldset>
+    </form>
+
+    <br><br>
+    <form style="height: 100px">
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="Internet Explorer"></option>
+            <option value="Firefox"></option>
+            <option value="Chrome"></option>
+            <option value="Opera"></option>
+            <option values="Safari"></option>
+        </datalist>
+        <input type="submit">
+    </form>
+    <script src=http://my.gblearn.com/js/loadscript.js></script>
+</body>
+</html>

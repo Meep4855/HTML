@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Chapter 6 Exercise">
+    <meta name="keywords" content ="HTML, Javascript, CSS">
+    <meta name="author" content="Jacob Furtado">
+
+    <title>Nested Tables with CSS</title>
+
+    <style type="text/css">
+
+        #mainTable{
+            background-color: whitesmoke;
+            border-collapse: collapse;
+            border: black solid 1px;
+        }
+
+        #mainTable td{
+            border:black solid 1px;
+            padding: 10px;
+        }
+
+        #fruitTable, #vegTable{
+            border-collapse: collapse;
+        }
+
+        #fruitTable td, #vegTable td{
+            width: 75px;
+        }
+
+        #fruitTable tbody tr:nth-child(even){
+            background-color: #6495ed;
+        }
+
+        #fruitTable tbody tr:nth-child(odd){
+            background-color: #add8e6;
+        }
+
+        #fruitTable td:last-child{
+            background-color: #fafad2;
+            text-align: right;
+            font-style: italic;
+        }
+
+        #vegTable tbody tr:nth-child(even){
+            background-color: #d8bfd8;
+        }
+
+        #vegTable tbody tr:nth-child(odd){
+            background-color: #fff0f5;
+        }
+
+        #vegTable td:last-child {
+            background-color: #e6e6fa;
+            text-align: right;
+            font-style:italic;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<table id="mainTable">
+    <thead>
+    <tr>
+        <th>Fruits</th>
+        <th>Vegetables</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td>
+            <table id="fruitTable">
+                <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>SKU</th>
+                    <th>Price per KG</th>
+                </tr>
+                </thead>
+                <tr>
+                    <td>Apples</td>
+                    <td>4041</td>
+                    <td>$0.99</td>
+                </tr>
+                <tr>
+                    <td>Orange</td>
+                    <td>90887</td>
+                    <td>$1.49</td>
+                </tr>
+                <tr>
+                    <td>Banana</td>
+                    <td>4044</td>
+                    <td>$0.69</td>
+                </tr>
+                <tr>
+                    <td>Grape</td>
+                    <td>8097</td>
+                    <td>$3.99</td>
+                </tr>
+            </table>
+        </td>
+
+        <td>
+            <table id="vegTable">
+                <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>SKU</th>
+                    <th>Price per KG</th>
+                </tr>
+                </thead>
+                <tr>
+                    <td>Potato</td>
+                    <td>1097</td>
+                    <td>$0.79</td>
+                </tr>
+                <tr>
+                    <td>Broccoli</td>
+                    <td>9765</td>
+                    <td>$1.99</td>
+                </tr>
+                <tr>
+                    <td>Onion</td>
+                    <td>6835</td>
+                    <td>$1.29</td>
+                </tr>
+                <tr>
+                    <td>Cabbages</td>
+                    <td>3625</td>
+                    <td>$2.89</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    </tbody>
+</table>
+    <script src="http://my.gblearn.com/js/loadscript.js"></script>
+</body>
+</html>

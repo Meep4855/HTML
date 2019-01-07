@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content ="chapter 6">
+    <meta name="keywords" content="HTML, Javascript, CSS">
+    <meta name="author" content="Jacob Furtado">
+    <title>cssTables</title>
+
+    <style type="text/css">
+        #table1, #table1 tr, #table1 td{
+            border: 3px dashed black;
+            border-collapse: collapse;
+        }
+
+        #table1 thead{
+            background-color: yellow;
+        }
+
+        #table1 tbody{
+            background-color: #2db34a;
+        }
+
+        #table1 tr:nth-child(even){
+            background-color: #7cc6EE;
+            color: #800080
+        }
+
+        #table1 tfoot td:first-child{
+            background-color: orange;
+        }
+
+        #table2{
+            color:#8a2be2;
+            width: 100%;
+            text-align: center;
+            border-collapse: collapse;
+        }
+
+        #table2 th, #table2 td, #table2 tr{
+            border: 2px solid green;
+        }
+
+        #table2 tr{
+            background-color: #7AA3cc;
+        }
+
+        #table2 tr:nth-child(odd){
+            background-color: #7CC6EE;
+        }
+
+        #table2 th{
+            color:red;
+            background-color:blue;
+        }
+
+        #table2 tfoot td{
+            background-color: #999999;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Table 1</h1>
+    <table id="table1">
+        <thead>
+        <tr>
+            <th colspan="4">Table 1</th>
+        </tr>
+        </thead>
+
+        <tbody>
+
+        <tr>
+            <td colspan="4">First Row / First Column</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">Second Row / First Column</td>
+            <td colspan="2">Second Row / Second Column</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">Third Row / First Column</td>
+            <td colspan="2">Third Row / Second Column</td>
+        </tr>
+
+        <tr>
+            <td>Fourth Row /  First Column</td>
+            <td>Fourth Row / Second Column</td>
+            <td>Fourth Row / Third Column</td>
+        </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="2">Table footer First Column</td>
+                <td colspan="2">Table footer Last Column</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <table id="table2">
+        <thead>
+        <tr>
+            <th colspan="4">Table 2</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td colspan="4">First Row / First Column</td>
+        </tr>
+
+        <tr>
+            <td>Third Row / First Column</td>
+            <td>Third Row / Second Column</td>
+            <td rowspan="2">Third Row / Third Column</td>
+            <td>Third Row / Fourth Column</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">Fourth Row / First Column</td>
+            <td colspan="1">Fourth Row / Second Column</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="2">Table footer First Column</td>
+            <td colspan="2">Table footer Last Column</td>
+        </tr>
+        </tfoot>
+    </table>
+    <script src="http://my.gblearn.com/js/loadscript.js"></script>
+</body>
+</html>
